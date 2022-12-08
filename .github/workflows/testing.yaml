@@ -20,7 +20,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CR_PAT }}
       - name: ghcr.io build & push
-        id: docker_build
+        id: github_build
         uses: docker/build-push-action@v3
         with:
           push: true
